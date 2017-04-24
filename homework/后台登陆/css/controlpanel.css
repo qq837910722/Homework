@@ -1,0 +1,21 @@
+.list-group-item:hover{
+	opacity: 0.3
+}
+.swipe_word{
+	display: none
+}
+/*响应式*/
+@media only screen and (max-width:768px){
+  .list-group{
+	display: none;
+   }
+   .swipe_word{
+	width: 100%;
+	height:20px;
+	overflow:hidden;
+	cursor: pointer;
+	display:flex;
+	justify-content:space-around;
+	color:blue
+   }
+}

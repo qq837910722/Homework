@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+input{
+	width: 500px;
+	height: 50px;
+	font-size: 30px;
+	background: #FDF5E6	
+}
+.container{
+	background: #C0FF3E;
+	width: 500px;
+	height: 450px;
+	margin-top: 100px;
+	margin-left: 500px;
+}
+div{
+	float: left;
+	margin-left: 10px;
+	font-size: 30px;
+}
+button{
+	background:#EEEEE0;
+	font-size: 30px;
+	border-radius: 5px;
+	margin-top: 10px;
+	float: left;
+	padding: 7px;
+	height: 50px;
+	width: 80px;
+	margin-left: 15px
+}
+.is{
+	width: 460px;
+	margin-top: 80px
+}
+.zero{
+	width: 175px;
+	margin-top: -120px
+}
+.dot{
+	margin-left: 205px;
+	margin-top: -120px
+}
+.add{
+	margin-top: -120px;
+	margin-left:300px;
+}
+.cos{
+	float: right;
+	margin-right: 24px;
+	margin-top: -120px
+}
+.sin{
+	float: right;
+	margin-right: 24px;
+	margin-top: -180px
+}

@@ -1,0 +1,1280 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://use.fontawesome.com/7584967e9c.js"></script>
+	<title>极客学院</title>
+</head>
+<body>
+	<div class="box">
+	<!-- header start -->
+    <header>
+        <div class="header">
+        	<a href="www.jikexueyuan.com" class="logo">
+        		<img src="img/logo.png">
+        	</a>
+        	<nav >
+        		<ul>
+        			<li>
+        				<a href="www.jikexueyuan.com">首页</a>
+        			</li>
+        			<li class="zhiye">
+        				职业学院 
+        			   <i class="fa fa-angle-down" aria-hidden="true"></i>
+                       <!-- 职业学院下拉列表 -->
+        			   <div class="submenu">
+        				<h3>前端学院</h3>
+        				<a href=""><i class="web"></i>WEB前端工程师</a>
+        				<a href=""><i class="weixin"></i>微信小程序</a>
+        				<h3>后端课程</h3>
+        				<a href=""><i class="weixin"></i>python工程师</a>
+        				<a href=""><i class="weixin"></i>GO语言</a>
+        				<a href=""><i class="web"></i>Andriod</a>
+        				<a href=""><i class="weixin"></i>IOS</a>
+        			  </div>
+        			</li>
+        			<li class="huiyuan"> 
+        				会员课程 
+        			<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <!-- 会员课程下拉列表 -->
+        			<div class="viplesson submenu">
+        				<a href=""><i class="kechengku"></i>课程库</a>
+        				<a href=""><i class="zhiyelujing"></i>职业路径图</a>
+        				<a href=""><i class="zhishitixi"></i>知识体系图</a>
+        				<a href=""><i class="xilie"></i>系列课程</a>
+        				<a href=""><i class="biaoqian"></i>课程标签</a>
+        				<a href=""><i class="vipgoumai"></i>VIP购买</a>
+        			</div>
+        			</li>
+        			<li class="jike">
+        				极客社区
+        			<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <!-- 极客社区下拉列表 -->
+        			<div class="viplesson submenu">
+        				<a href=""><i class="jishuwenda"></i>技术问答</a>
+        				<a href=""><i class="Wiki"></i>Wiki</a>
+        				<a href=""><i class="shequn"></i>社群</a>
+        				<a href=""><i class='ziyuan'></i>资源下载</a>
+        			</div>
+        			</li>
+        		</ul>
+        	</nav>
+        	<div class="icon-box" >
+        		<span class="search-icon" id="search-btn"></span>
+        		<span class="app-icon">
+                    <!-- 极客app二维码 -->
+        			<div class="submenu">
+        				<img src="img/heade-rwm.png">
+        			</div>
+        		</span>
+        		<span class="loginlist">
+        			<img src="img/default.gif">
+                    <!-- login下拉列表 -->
+        			<dl class="submenu">
+        				<dd>学习中心</dd>
+        				<dd>个人中心</dd>
+        				<dd>学消息通知</dd>
+        				<dd>退出登录</dd>
+        			</dl>
+        		</span>
+        	</div>
+            <div class="searchbox scale" id="searchbox" style="display:none">
+                <i class="close-icon" id="close-btn"></i>
+                <i class="search-icon" id="search-btn"></i>
+                <input id="web_search_header" placeholder="搜索课程、问答或Wiki" value="">
+                <div class="tagbox">
+                    <a href="">Andriod</a>
+                    <a href="">IOS</a>
+                    <a href="">HTML5</a>
+                </div>
+            </div>
+        </div>
+	</header>
+     <!-- main -->
+     <div id="pager">
+     	<div id="container">
+     		<div class="wrap w-1000 mar-t20">
+                <!-- 中上部分 -->
+     			<div id="main" class="f_r">
+     				<div class="tagGather">
+     					<div class="bd">
+     						<div class="listbox">
+     							<div class="sort">
+     								<div class="wrap">
+     									<div class="sortMode">
+     										<h3>全部课程</h3>
+     										<dl >
+     											<dt >
+     												<span class="type-title-one">最新
+     													<i class="fa fa-angle-down" aria-hidden="true"></i>
+     												</span>
+     											</dt>
+                                                <!-- 最新下拉列表 -->
+     											<dd>
+     												<p><a href="">最新</a></p>
+     												<p><a href="">最热</a></p>
+     											</dd>
+     										</dl>
+     										<dl>
+     											<dt>
+     												<span>课程类型
+     													<i class="fa fa-angle-down" aria-hidden="true"></i>
+     												</span>
+     											</dt>
+                                                <!-- 课程类型下拉列表 -->
+     											<dd>
+     												<p><a href="">VIP</a></p>
+     												<p><a href="">免费</a></p>
+     												<p><a href="">认证专享</a></p>
+     												<p><a href="">全部</a></p>
+     											</dd>
+     										</dl>
+     										<dl>
+     											<dt>
+     												<span>内容类型
+     													<i class="fa fa-angle-down" aria-hidden="true"></i>
+     												</span>
+     											</dt>
+                                                <!-- 内容类型下拉列表 -->
+     											<dd>
+     												<p><a href="">知识精讲</a></p>
+     												<p><a href="">项目实战</a></p>
+     												<p><a href="">全部</a></p>
+     											</dd>
+     										</dl>
+     										<dl>
+     											<dt>
+     												<span>难度等级
+     													<i class="fa fa-angle-down" aria-hidden="true"></i>
+     												</span>
+     											</dt>
+                                                <!-- 难度等级下拉列表 -->
+     											<dd>
+     												<p><a href="">初级</a></p>
+     												<p><a href="">中级</a></p>
+     												<p><a href="">高级</a></p>
+     												<p><a href="">全部</a></p>
+     											</dd>
+     										</dl>
+     									</div>
+                                        <!-- 模式切换 -->
+     									<div class="previewMode">
+     										<ul>
+     											<li class="kuai-icon curr">
+     												<i class="icon"></i>
+     											</li>
+     											<li class="list-icon">
+     												<i class="icon"></i>
+     											</li>
+     										</ul>
+     									</div>
+     								</div>
+     							</div>
+                                <div class="lesson-list" id="changeid" style="display:block">
+                                    <ul class="cf" style="display:block">
+                                          <li id="3224">
+                                            <div class="opacity opacity1">
+                                            <div class="box-list">
+                                            <div class="lessonimg-box t10">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            </div>
+                                            <div class="lesson-infor h10" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange10">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </div>
+                                        </li>
+                                        <li id="3225">
+                                            <div class="lessonimg-box t11">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h11" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange11">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3226">
+                                            <div class="lessonimg-box t12">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h12" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange12">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3227">
+                                            <div class="lessonimg-box t1">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h1" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange1">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3228">
+                                            <div class="lessonimg-box t2">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h2" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange2">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3229">
+                                            <div class="lessonimg-box t3">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h3" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange3">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3230">
+                                            <div class="lessonimg-box t4">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h4" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange4">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3231">
+                                            <div class="lessonimg-box t5">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h5" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange5">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3232">
+                                            <div class="lessonimg-box t6">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h6" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange6">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3233">
+                                            <div class="lessonimg-box t7">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h7" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange7">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3234">
+                                            <div class="lessonimg-box t8">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h8" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange8">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                        <li id="3235">
+                                            <div class="lessonimg-box t9">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="" target="_blank">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor h9" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>
+                                                <p class="wordchange9">本课程主要介绍腾讯云相关产品</p>
+                                                <i class="time-icon"></i>
+                                                    <em>5课时 177分钟</em>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="lesson-list2" id="changed" style="display:none">
+                                    <ul class="cf" style="block">
+                                        <li id="322">
+                                            <div class="lessonimg-box ">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor " style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lessonimg-box ">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor " style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lessonimg-box ">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor " style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lessonimg-box">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lessonimg-box">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lessonimg-box">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lessonimg-box">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lessonimg-box">
+                                                <i class="user-action lesson-shoucang" style="display:none"></i>
+                                                <a href="">
+                                                    <img src="img/584e070d8c2cb.jpeg" class="lessonimg">
+                                                    <div class="lesson-play" style="opacity:0">
+                                                        <i class="playicon"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="lesson-infor" style="height:88px">
+                                                <h2 class="lesson-info-h2">
+                                                    <a href="">腾讯云产品-游戏云</a>
+                                                </h2>    
+                                                <p style="height:36px;opacity:0;display:block">本课程主要介绍腾讯云相关产品</p>
+                                                <div class="timeandicon">
+                                                    <div class="cf">
+                                                        <dl>
+                                                            <dd class="mar-b8">
+                                                                <i class="time-icon"></i>
+                                                                <em>5课时 177分钟</em>
+                                                            </dd>
+                                                            <dd class="zhongji">
+                                                                <i class="xiaohao-icon2"></i>
+                                                                <em>中级</em>
+                                                            </dd>
+                                                        </dl>
+                                                        <em class="learn-number" style="display:inline">4110人学习</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="page-nav">
+                                    <ul class="pages">
+                                        <li class="pgNext pgEmpty">首页</li>
+                                        <li class="pgNext pgEmpty">上一页</li>
+                                        <li class="page-number pgCurrent">1</li>
+                                        <li class="page-number">2</li>
+                                        <li class="page-number">3</li>
+                                        <li class="page-number">4</li>
+                                        <li class="page-number">5</li>
+                                        <li class="thpoint">...</li>
+                                        <li class="pgNext">下一页</li>
+                                        <li class="pgNext">末页</li>
+                                        <li class="thpoint pagetotal" style="margin-top:3px;">共95页</li>
+                                        <li class="thpoint pagenow">
+                                            当前
+                                            <input type="text" value="1" style="width:20px; height:16px;margin-top:-3px;padding-top:2px;padding-left:10px;">页
+                                        </li>
+                                        <li class="pgNext go">确定</li>
+                                    </ul>
+                                </div>
+
+     						</div>
+     					</div>
+     				</div>
+     			</div>
+                <!-- 左侧部分 -->
+     			<div id="aside" class="f_l">
+     				<div class="aside-allCategory">
+     					<div class="hd">
+     						<h2>
+     							<a href="">
+     								<i class="icon-course-curr"></i>
+     								课程库
+     							</a>
+     						</h2>
+     					</div>
+     					<div class="bd">
+     						<ul class="aside-clist">
+     							<li>
+     								<div class="list_s">
+                                        <div class="list_s s0" style="margin-left:-1px"><a href="">移动开发</a></div>
+                                        <div class="list-show" style="width:401.455px;top:-45px;">
+                                            <div  class="yidong">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">应用开发</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Andriod</a>
+                                                        <a href="">IOS</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">游戏开发</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Cocos</a>
+                                                        <a href="">3D</a>
+                                                        <a href="">2D</a>
+                                                        <a href="">Unreal</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">常用框架</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Cordova</a>
+                                                        <a href="">React Native</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="qianduan">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">前端基础</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">HTML</a>
+                                                        <a href="">CSS</a>
+                                                        <a href="">HTML5</a>
+                                                        <a href="">CSS3</a>
+                                                        <a href="">JS</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">前端进阶</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Typescript</a>
+                                                        <a href="">前端安安全</a>
+                                                        <a href="">项目实战</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">常用框架</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Jquery</a>
+                                                        <a href="">ReactJS</a>
+                                                        <a href="">backbone </a>
+                                                        <a href="">mooltools</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">HTML5游戏</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">SVG</a>
+                                                        <a href="">WebGL</a>
+                                                        <a href="">CreateJS</a>
+                                                        <a href="">FLash</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="houduan">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">Python</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">HTML</a>
+                                                        <a href="">CSS</a>
+                                                        <a href="">HTML5</a>
+                                                        <a href="">CSS3</a>
+                                                        <a href="">JS</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">PHP</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Typescript</a>
+                                                        <a href="">前端安安全</a>
+                                                        <a href="">项目实战</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">Node.JS</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Jquery</a>
+                                                        <a href="">ReactJS</a>
+                                                        <a href="">backbone </a>
+                                                        <a href="">mooltools</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">Ruby</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">SVG</a>
+                                                        <a href="">WebGL</a>
+                                                        <a href="">CreateJS</a>
+                                                        <a href="">FLash</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div  class="jichu">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">基础语言</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">C</a>
+                                                        <a href="">C++</a>
+                                                        <a href="">C#</a>
+                                                        <a href="">JAVA</a>
+                                                        <a href="">Qt</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">计算机基础</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">计算机组成原理</a>
+                                                        <a href="">网路工程</a>
+                                                        <a href="">word</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">开发基础</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">算法基础</a>
+                                                        <a href="">数据结构</a>
+                                                        <a href="">设计模式 </a>
+                                                        <a href="">软件工程</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">开发工具</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Git</a>
+                                                        <a href="">SVN</a>
+                                                        <a href="">VI</a>
+                                                        <a href="">FLash</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="yunjisuan">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">云计算</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">openstack</a>
+                                                        <a href="">download</a>
+                                                        <a href="">HTML5</a>
+                                                        <a href="">CSS3</a>
+                                                        <a href="">JS</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">大数据</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Typescript</a>
+                                                        <a href="">前端安安全</a>
+                                                        <a href="">项目实战</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">虚拟化</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">JVm</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">云平台</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">腾讯云</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="zhinengyingjian">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">硬件构架</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">C51</a>
+                                                        <a href="">ARM</a>
+                                                        <a href="">Keil</a>
+                                                        <a href="">AVR</a>
+                                                        <a href="">cortex</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">物联网操作系统</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">ROTS</a>
+                                                        <a href="">Andriod Wear</a>
+                                                        <a href="">Apple Watchkit</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">开源硬件平台</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">JVm</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">通信链接技术</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">腾讯云</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="shujuku">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">云计算</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">openstack</a>
+                                                        <a href="">download</a>
+                                                        <a href="">HTML5</a>
+                                                        <a href="">CSS3</a>
+                                                        <a href="">JS</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">大数据</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">Typescript</a>
+                                                        <a href="">前端安安全</a>
+                                                        <a href="">项目实战</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">虚拟化</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">JVm</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">云平台</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">腾讯云</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div  class="renzhengkaoshi">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">SQL</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">MySQL</a>
+                                                        <a href="">SQL SERVEr</a>
+                                                        <a href="">oracle</a>
+                                                        <a href="">SQlite</a>
+                                                        <a href="">DB2</a>
+                                                    </dd>
+                                                </dl>
+                                                    <dt>
+                                                        <a href="">NOSQL</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">redis</a>
+                                                        <a href="">MONGODB</a>
+                                                        <a href="">Apple Watchkit</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="IT">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">计算机等级考试</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">一级L</a>
+                                                        <a href="">二级</a>
+                                                        <a href="">二级C</a>
+                                                        <a href="">二级C++</a>
+                                                        <a href="">网络工程师</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">N企业认证</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">思科认证</a>
+                                                        <a href="">ORACLe认证</a>
+                                                        <a href="">LINUX认证</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div  class="sheji">
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">运维管理</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">shell</a>
+                                                        <a href="">自动化运维</a>
+                                                        <a href="">nginx</a>
+                                                        <a href="">apache</a>
+                                                        <a href="">运维监控</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">商业智能</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">FLiemaker</a>
+                                                        <a href="">Andriod Wear</a>
+                                                        <a href="">Apple Watchkit</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="">操作系统</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">JVm</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>企业服务</a>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <a href="">腾讯云</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s1">
+     									<a href="">前端开发</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s2">
+     									<a href="">后端开发</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s3">
+     									<a href="">基础知识</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s4">
+     									<a href="">云计算&大数据</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s5">
+     									<a href="">只能硬件&物联网</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s6">
+     									<a href="">数据库</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s7">
+     									<a href="">认证考试</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s8">
+     									<a href="">企业IT</a>
+     								</div>
+     							</li>
+     							<li>
+     								<div class="list_s s9">
+     									<a href="">设计&产品&测试</a>
+     								</div>
+     							</li>
+     						</ul>
+     					</div>
+     				</div>
+     				<ul class="hdlist">
+     					<li>
+     						<a href="">
+     							<i class="icon-zylj"></i>
+     							职业路径图
+     						</a>
+     					</li>
+     					<li>
+     						<a href="">
+     							<i class="icon-zstx"></i>
+     							知识体系图
+     						</a>
+     					</li>
+     					<li>
+     						<a href="">
+     							<i class="icon-xlkc"></i>
+     							系列课程
+     						</a>
+     					</li>
+     					<li>
+     						<a href="">
+     							<i class="icon-kcbq"></i>
+     							课程标签
+     						</a>
+     					</li>
+     				</ul>
+     			</div>
+     		</div>
+     	</div>
+     </div>
+     <!-- footer -->
+     <div class="footer">
+        <footer>
+            <div class="bottom">
+                <div class="bottom_jk_img">
+                    <img src="img/jk-logo-footer.png" width="135px" height="50px"></div>
+                <div class="bottom_jk_word">极客学员，编程是一种信仰！</div>
+                <div class="bottom_jobcollage">
+                    <h2>职业学院</h2>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a>
+                    <br>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a>
+                    <br>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/zhiye/go">GO语言工程师</a>
+                    <br>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/zhiye/ios">IOS工程师</a>
+                    <br>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/zhiye/wechatapp">微信小程序工程师</a>
+                </div>
+                <div class="bottom_viplesson">
+                    <h2>会员课程</h2>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/course/">课程库</a>
+                    <br>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/path/">知识体系图</a>
+                    <br>
+                    <br>
+                    <a href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a>
+                    <br>
+                    <br>
+                    <a href="http://www.jikexueyuan.com/path/">系列课程</a>
+                    <br>
+                    <br>
+                    <a href="http://ke.jikexueyuan.com/xilie/">课程标签</a>
+                </div>
+                <div class="bottom_community">
+                    <h2>极客社区</h2>
+                    <br>
+                    <a href="http://wenda.jikexueyuan.com/">技术问答</a>
+                    <br>
+                    <br>
+                    <a href="http://wiki.jikexueyuan.com/">wiki</a>
+                    <br>
+                    <br>
+                    <a href="http://download.jikexueyuan.com/">资源下载</a>
+                    <br>
+                    <br>
+                    <a href="http://qun.jikexueyuan.com/">社群</a>
+                </div>
+                <div class="bottom_other">
+                    <h2>其它</h2>
+                    <br>
+                    <a href="http://help.jikexueyuan.com/">关于我们</a>
+                    <br>
+                    <br>
+                    <a href="http://help.jikexueyuan.com/join.html">加入我们</a>
+                    <br>
+                    <br>
+                    <a href="http://j.jikexueyuan.com/evangelist/apply">讲师合作</a>
+                    <br>
+                    <br>
+                    <a href="http://j.jikexueyuan.com/evangelist/apply">联系我们</a>
+                    <br>
+                    <br>
+                    <a href="http://help.jikexueyuan.com/contact.html">友情链接</a>
+                    <br>
+                    <br></div>
+                <div class="bottom_tel">
+                    <h2>服务热线：400-678-8266</h2>
+                </div>
+                <div class="bottom_ios">
+                    <div class="bottom_ios_img">
+                        <img src="img/icon-down-ios.png" width="40px" height="40px"></div>
+                    <span>iphone</span>
+                </div>
+                <div class="bottom_android">
+                    <div class="bottom_android_img">
+                        <img src="img/icon-down-and.png" width="40px" height="40px"></div>
+                    <span>Android</span>
+                </div>
+                <hr>
+                <div class="bottom_coryright">All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210</div>
+                <div class="bottom_sina">
+                    <a href="http://weibo.com/login.php">
+                        <img src="img/icon-down-sina.png"></a>
+                </div>
+                <div class="bottom_wechet">
+                    <a href="http://qun.jikexueyuan.com/jikexueyuan/topic/430">
+                        <img src="img/icon-down-wechat.png"></a>
+                </div>
+                <div class="bottom_believe">
+                    <a href="https://credit.cecdc.com/CX20160908025320080267.html">
+                        <img src="img/cert.png"></a>
+                </div>
+            </div>
+        </footer>
+     </div>
+     <!-- 返回最顶层 -->
+     <div class="gotop">
+        <span class="top"></span>
+     </div>
+	<!-- js部分 -->
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

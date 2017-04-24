@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Rank</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function distribution(){
+		var a =1;//90-100
+		var b =2;//80-89
+		var c =3;//70-79
+		var d =4;//60-69
+		var e =5;//50-59
+		var f =6;//40-49
+		var g =7;//30-39
+		var h =8;//20-29
+		var i = 9//10-19
+		var j =10;//0-9
+
+		//大兄弟 JS 的comment 前面加两个干干就是把“这一行” 的 “干干” 后面的 东西 comment 掉。。。没必要后面也加
+
+		/*
+		
+			这种斜着的干干加 * 号的 是comment 多行的
+		
+		*/
+
+		//还有你上面那些玩意儿太多余了- - 完全可以在下面直接写出来
+
+		//从下面开始改
+
+		var x = document.getElementById("score").value; //用户输入的分数
+
+		//定义 variable 前面是要加var 我之前给你说的不是这个。。
+
+		//下面你这个if else statement 踏马的 你最后一个else后面还加什么条件- -。。。括号里的东西 删了你的代码就能用了
+
+		//以后哪里错了 直接审查元素- - 会有error出来 直接看error提示第几行
+
+		//还有你这个innerText什么玩意儿， 又不是W3C规范的统统改成 innerHTML行不咯
+
+		if(x>=90&&x<=100){
+			document.getElementById("rank").innerText=a;
+		}else if(x>=80&&x<90){
+			document.getElementById("rank").innerText=b;
+		}else if(x>=70&&x<80){
+			document.getElementById("rank").innerText=c;
+		}else if(x>=60&&x<70){
+			document.getElementById("rank").innerText=d;
+		}else if(x>=50&&x<60){
+			document.getElementById("rank").innerText=e;
+		}else if(x>=40&&x<50){
+			document.getElementById("rank").innerText=f;
+		}else if(x>=30&&x<40){
+			document.getElementById("rank").innerText=g;
+		}else if(x>=20&&x<30){
+			document.getElementById("rank").innerText=h;
+		}else if(x>=10&&x<20){
+			document.getElementById("rank").innerText=i;
+		}else(x>=0&&x<10){
+			document.getElementById("rank").innerText=j;
+		}
+
+
+		//还有你别嫌css麻烦 你建个template folder不就好了 下次写代码直接复制folder改个名字title什么的哪里麻烦了
+		//JS 最好分开写
+	}
+	</script>
+	<!-- 分数输入框 -->
+	<p>请输入分数</p>
+	<input type="text" id="score">
+	<!-- 等级分配 -->
+	<span id="rank"></span>
+	<button onclick="distribution()">分配</button>
+</body>
+</html>

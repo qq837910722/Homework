@@ -1,0 +1,625 @@
+@charset "utf-8";
+/* CSS Document */
+.hide
+{
+	display: none;
+}
+
+body
+{
+	background: #f5f5f5;
+	font-size: .825em;
+}
+
+h1,h2,h3,h4
+{
+	font-size: 1.425em;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+img
+{
+	vertical-align: middle;
+}
+
+.clear-fix
+{
+	clear:both;
+}
+
+.site-container
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*-- Header --*/
+
+.topbar
+{
+	height: 60px;
+	border-bottom: 1px solid #ececec;
+	background: #fff;
+}
+
+.main-header
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.site-logo
+{
+	height: 40px;
+	width: auto;
+	margin-top: 10px;
+	margin-right: 50px;
+	float: left;
+}
+
+.nav-container
+{
+	float: left;
+}
+
+.main-nav li
+{
+	display: inline;
+	text-align: center;
+	line-height: 60px;
+	margin-right: 50px;
+	cursor: pointer;
+}
+
+.main-nav li:hover
+{
+	color: #35b558;
+}
+
+.icon-set
+{
+	float: right;
+	width: 135px;
+	margin-top: 20px;
+}
+
+.icon-set span
+{
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+	cursor: pointer;
+	margin-right: 25px;
+}
+
+.search-icon
+{	
+	background: url(../img/search-icon.png) no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+}
+
+.search-icon:hover
+{
+	background: url(../img/search-icon2.png) no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+}
+
+.mobile-icon
+{	
+	background: url(../img/app-icon.png) no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+}
+
+.mobile-icon:hover
+{
+	background: url(../img/app-icon2.png) no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+}
+
+.login-icon
+{	
+	background: url(../img/login-icon.png) no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+}
+
+/* -- Slider Container & Login Area -- */
+.site-container
+{
+	margin-top: 20px;
+}
+
+.slider
+{
+	height: 330px;
+	width: 750px;
+	float: left;
+}
+
+.login-container
+{
+	float: right;
+	width: 240px;
+}
+
+.login
+{
+	width: 240px;
+    height: 160px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 26px 29px 24px;
+}
+
+.ad
+{
+	width: 240px;
+	height: 160px;
+	margin-top: 9px;
+}
+
+.user-info
+{
+	margin-bottom: 20px;
+}
+
+.user-info img
+{
+	height: 55px;
+	width: 55px;
+	float: left;
+	margin-right: 15px;
+}
+.user-info p
+{
+	height: 55px;
+	line-height: 27px;
+}
+
+.btn
+{
+	display: block;
+	width: 80px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #35b558;
+	border: 1px solid #35b558;
+	border-radius: 2px;
+	transition: background .8s;
+	-moz-transition: background .8s;
+    -webkit-transition: background .8s;
+    -o-transition: background .8s;
+}
+
+.btn:hover
+{
+	color: #fff;
+	background-color: #35b558;
+}
+
+.login-btn
+{
+	float: left; 
+}
+
+.register-btn
+{
+	float: right;
+}
+
+/*-- JK Classes Section --*/
+.class-container
+{
+	margin-top: 10px;
+	background: pink;
+}
+
+.classes
+{
+	width: 327px;
+    height: 70px;
+    float: left;
+	cursor:pointer;
+	transition: all .2s linear;
+	padding-left: 33px;
+    line-height: 68px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-right: 9px;
+}
+
+.classes img
+{
+	height: 55px;
+	width: 55px;
+}
+
+.classes:hover
+{
+	box-shadow: 0 4px 8px rgba(0,0,0,.4);
+}
+
+.classes p
+{
+	display: inline-block;
+	color: #fff;
+    font-size: 14px;
+    width: 204px;
+    text-align: center;
+    margin-left: 27px;
+}
+
+.php
+{
+	background: url(../img/php-bg.jpg) no-repeat center center;
+	background-size: 327px 70px;
+}
+
+.android
+{
+	background: url(../img/android-bg.jpg) no-repeat center center;
+	background-size: 327px 70px;
+}
+
+.web
+{
+	background: url(../img/html-bg.jpg) no-repeat center center;
+	background-size: 327px 70px;
+}
+
+.ios
+{
+	background: url(../img/ios-bg.jpg) no-repeat center center;
+	background-size: 327px 70px;
+}
+
+.design
+{
+	background: url(../img/ui-bg.jpg) no-repeat center center;
+	background-size: 327px 70px;
+	margin-right: 0;
+}
+
+.java
+{
+	background: url(../img/java-bg.jpg) no-repeat center center;
+	background-size: 327px 70px;
+	margin-right: 0;
+}
+
+.class-discount
+{
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.disc
+{
+	width: 235px;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #e9e9e9;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all .4s linear;
+}
+
+.disc:hover
+{
+	box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.disc:last-child
+{
+	margin-right: 0;
+}
+
+.disc img
+{
+	width: 100%;
+}
+
+.disc .prices
+{
+	height: 113px;
+	background-color: #fff;
+	padding: 14px;
+	box-sizing: border-box;
+}
+
+.class-title
+{
+	color: #555;
+	line-height: 18px;
+	height: 36px;
+	font-size: .925em;
+}
+
+.class-length
+{
+	font-size: .925em;
+	line-height: 16px;
+	color: #999;
+	margin-top: 6px;
+	margin-bottom: 8px;
+}
+
+.current-price
+{
+	font-size: 1.5em;
+	color: #ff5c00;
+	margin-right: 5px;
+}
+
+.current-price .fa
+{
+	font-size: .7em;
+	margin-right: 5px;
+}
+
+.original-price
+{
+	color: #999;
+	font-size: .95em;
+	text-decoration: line-through;
+}
+
+.student-amount
+{
+	color: #999;
+	font-size: .95em;
+	float: right;
+	margin-top: 6px;
+}
+
+/*-- Programer Section --*/
+.programer-container h2
+{
+	line-height: 18px;
+	height: 18px;
+	margin-bottom: 22px;
+	width: 100%;
+	clear: both;
+}
+
+.left-side
+{
+/*	background: pink;*/
+	height: 135px;
+	width: 620px;
+	float: left;
+}
+
+.right-side
+{
+/*	background: pink;*/
+	height: 135px;
+	width: 380px;
+	float: left;
+}
+
+.pro-cont
+{
+	cursor: pointer;
+	color: #fff;
+	position: relative;
+}
+
+.pro-cont i
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0;
+	transition: opacity .8s linear;
+}
+
+.pro-cont i:hover
+{
+	opacity: .2;
+}
+
+.pro-cont span
+{
+	line-height: 40px;
+}
+
+.pro-cont p
+{
+	padding-top: 70px;
+	font-size: 1.025em;
+}
+
+.more-info1
+{
+	background: #df5a49;
+}
+
+.more-info1 img
+{
+	float: left;
+	margin-right: 20px;
+}
+
+.pre-entry
+{
+	background: #efc94c;
+}
+
+.pre-entry img
+{
+	float:left;
+	margin-right: 20px;
+}
+
+.more-info2
+{
+	background: #e27a3f;
+	text-align: right;
+}
+
+.more-info2 img
+{
+	float: right;
+	margin-left: 20px;
+}
+
+.signup-entry
+{
+	background: #45b29d;
+	text-align: right;
+}
+
+.signup-entry img
+{
+	float: right;
+	margin-left: 20px;
+}
+
+/*-- JK School Section --*/
+
+.jkschool-container h2
+{
+	padding-top: 40px;
+	line-height: 18px;
+	height: 18px;
+	margin-bottom: 22px;
+	width: 100%;
+	clear: both;
+}
+
+.jk-school
+{
+	cursor: pointer;
+	position: relative;
+}
+
+.jk-school i
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0;
+	transition: opacity .8s linear;
+}
+
+.jk-school:hover i
+{
+	opacity: .2;
+}
+
+.jk-school span
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #fff;
+}
+
+.left-con
+{
+	float: left;
+	height: 270px;
+	width: 500px;
+	margin-right: 10px;
+}
+
+.right-con
+{
+	float: right;
+	height: 270px;
+	width: 490px;
+}
+
+.right-con .jk-school
+{
+	float: left;
+}
+
+.jk-python
+{
+	margin: 0 10px 10px 0;
+}
+
+.jk-go
+{
+	margin-bottom: 10px;
+}
+
+.jk-ios
+{
+	margin-right: 10px;
+}
+
+.left-con img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.right-con img
+{
+	width: 240px;
+	height: 130px;
+}
+
+.jk-web span
+{
+	padding-top: 180px;
+	font-size: 1.5em;
+	background: url(../img/jk-web.png) no-repeat center 70px;
+	background-size: 55px 84px;
+}
+
+.right-con .jk-school span
+{
+	padding-top: 88px;
+}
+
+.jk-python span
+{
+	background: url(../img/jk-python.png) no-repeat center 31px;
+	background-size: 36px 36px;
+}
+
+
+.jk-go span
+{
+	background: url(../img/jk-go.png) no-repeat center 33px;
+	background-size: 36px 29px;
+}
+
+.jk-ios span
+{
+	background: url(../img/jk-ios.png) no-repeat center 36px;
+	background-size: 32px 36px;
+}
+
+.jk-wechat span
+{
+	background: url(../img/jk-wechat.png) no-repeat center 40px;
+	background-size: 40px 33px;
+}
+.bottom .line{
+	margin-top: 150px
+}

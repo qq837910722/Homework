@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+	<meta charset="UTF-8">
+	<title>计算机</title>
+</head>
+<body>
+	
+	<input type="text" id="num1">  <!-- 第一个值 -->
+	<select id="symbols"><!-- 符号 -->
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select> 
+	<input type="text" id="num2"> <!-- 第二个值 -->
+	结果:<span id="results"></span>
+	<button onclick="calculate()">计算</button>
+</body>
+<script type="text/javascript">
+	 function calculate(){
+	   	var firstNum =(document.getElementById("num1").value);//用户输入的第一个值
+	   	var secNum =(document.getElementById("num2").value);//用户输入的第二个值
+	   	if(!firstNum.trim()||!secNum.trim()){
+	   		alert('输入为空，请输入要计算的数字');
+	   		return;
+	   	}
+	   	if(isNaN(firstNum)||isNaN(secNum)){
+	   		alert('输入为空，请输入数字');
+	   		return;
+	   	}
+	   	firstNum=parseFloat(firstNum);
+	   	secNum=parseFloat(secNum);
+	   	var symbols =document.getElementById("symbols").value;//符号
+	   	var result =document.getElementById("results");//结果
+	   	// var add = parseFloat((firstNum+secNum).toFixed(8));//加法运算
+	   	// var subs = parseFloat((firstNum-secNum).toFixed(8));//减法运算
+	   	// var multip = parseFloat((firstNum*secNum).toFixed(8));//乘法运算
+	   	// var divis = parseFloat((firstNum/secNum).toFixed(8));//除法运算
+	   	// var error ="错误";
+
+	   	var res;
+	   	if (symbols == '+') { //加法
+			res =parseFloat((firstNum+secNum).toFixed(8));
+			result.innerHTML=res;
+	   	}
+	   	if (symbols == '-') { //减法
+			res = parseFloat((firstNum-secNum).toFixed(8));
+			result.innerHTML=res;
+	   	}
+	   	if (symbols == '*') { //乘法
+			res = parseFloat((firstNum*secNum).toFixed(8));
+			result.innerHTML=res;
+	   	}
+	   	if (symbols == '/') { //除法
+	   		if (secNum==0) {
+	   			alert('除数不能为0');
+	   			res='NaN';
+	   		}else{
+	   			res = parseFloat((firstNum/secNum).toFixed(8));
+			}
+			result.innerHTML=res;
+	   	}
+
+        console.log(symbols);
+	   }
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+	<meta charset="UTF-8">
+	<title>计算机</title>
+</head>
+<body>
+	<script type="text/javascript">
+	   function calculate(){
+	   	var x =parseInt(document.getElementById("num1").value);//用户输入的第一个值
+	   	var y =parseInt(document.getElementById("num2").value);//用户输入的第二个值
+	   	var s =document.getElementById("symbol").value;//符号
+	   	var z = x+y;//加法运算
+	   	var v = x-y;//减法运算
+	   	var n = x*y;//乘法运算
+	   	var m = x/y;//除法运算
+	   	var k ="错误"
+        if (s="+") {
+			document.getElementById("result").innerText=z;
+        }
+        if (s="-"){
+        	document.getElementById("result").innerText=v;
+        }
+        if(s="*"){
+        	document.getElementById("result").innerText=n;
+        }
+        if(s="/"&&y!=0){
+        	document.getElementById("result").innerText=m;//除数不为0的情况下
+        }else if(s="/"&&y=0){
+        	document.getElementById("result").innerText=k;//除数为0的情况下
+        }else{
+			result.innerHTML = "Please input the right symbol";
+        }
+	   }
+	</script>
+	<input type="text" id="num1">  <!-- 第一个值 -->
+	<input type="text" id="symbol"> <!-- 符号 -->
+	<input type="text" id="num2"> <!-- 第二个值 -->
+	结果:<span id="result" style="color:red;font-size:2rem"></span>
+	<button onclick="calculate()">计算</button>
+</body>
+</html>

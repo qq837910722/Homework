@@ -1,0 +1,12 @@
+.container{
+	margin-top: 200px;
+}
+.form-group{
+	min-width: 510px
+}
+img{
+	cursor: pointer;
+}
+body{
+	background: url("../img/fb7ac96ae408e0dce7a1749409bf737e.jpg") no-repeat 
+}

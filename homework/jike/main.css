@@ -1,0 +1,970 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+span {
+  text-align: center; }
+
+.header {
+  height: 60px;
+  border-bottom: 1px solid #ececec;
+  background: #fff; }
+
+.navdis {
+  width: 1000px;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  min-width: 1000px; }
+
+.logo img {
+  width: 109px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  float: left;
+  margin-right: 50px; }
+
+.navdis nav {
+  height: 60px;
+  display: inline-block;
+  float: left; }
+
+.header_m span:hover > span {
+  display: block;
+  color: #666; }
+
+.header_m i:before {
+  content: "\f107"; }
+
+.header_m nav span:hover i {
+  transform: rotate(180deg); }
+
+.header_r {
+  width: 17px;
+  height: 17px;
+  float: right; }
+
+.header_m span {
+  margin-right: 30px;
+  position: relative; }
+  .header_m span:hover {
+    color: #35b558;
+    cursor: pointer; }
+  .header_m span span {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: white;
+    z-index: 99;
+    display: none; }
+
+.search {
+  background-position: 0, 0;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 40%;
+  right: 12%;
+  background: url(http://e.jikexueyuan.com/headerandfooter/images/search-icon.png) 0 0 no-repeat;
+  background-size: 17px 17px; }
+  .search:hover {
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/search-icon2.png) 0 0 no-repeat;
+    background-size: 17px 17px; }
+
+.login {
+  background-position: 0, 0;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 40%;
+  background: url(http://e.jikexueyuan.com/headerandfooter/images/login-icon.png) 0 0 no-repeat;
+  right: 1%;
+  background-size: 17px 17px; }
+  .login div {
+    position: relative; }
+  .login span {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: white;
+    z-index: 99;
+    display: none; }
+  .login:hover.login span {
+    display: block;
+    text-align: center; }
+
+.app {
+  background-position: 0, 0;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 40%;
+  background: url(http://e.jikexueyuan.com/headerandfooter/images/app-icon.png) 0 0 no-repeat;
+  right: 7%;
+  background-size: 17px 17px; }
+  .app:hover {
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/app-icon2.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-size: 17px 17px; }
+
+.comment {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: relative; }
+
+.slide {
+  width: 750px;
+  height: 330px;
+  background: orange; }
+
+.login_r {
+  width: 240px;
+  height: 160px;
+  float: left;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white; }
+
+.ghost {
+  width: 240px;
+  height: 160px;
+  position: absolute;
+  right: 0;
+  top: 33%; }
+
+.userinfo {
+  margin-left: 20px;
+  margin-top: 20px; }
+  .userinfo img {
+    float: left;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-right: 15px; }
+
+.username {
+  float: left;
+  font-size: 12px;
+  color: #555;
+  line-height: 16px;
+  height: 16px;
+  width: 108px;
+  margin-top: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.userstatus {
+  float: left;
+  font-size: 12px;
+  color: #555;
+  line-height: 16px;
+  height: 16px;
+  width: 108px;
+  margin-top: 10px; }
+
+.loginOn {
+  font-size: 14px;
+  float: left;
+  display: inline-block;
+  width: 85px;
+  height: 32px;
+  border: 1px solid #35b558;
+  border-radius: 2px;
+  color: #35b558;
+  line-height: 30px;
+  text-align: center;
+  margin: 50px -40px 0 -180px; }
+  .loginOn:hover {
+    color: #fff;
+    background-color: #35b558; }
+
+.registerNow {
+  font-size: 14px;
+  float: left;
+  display: inline-block;
+  width: 85px;
+  height: 32px;
+  border: 1px solid #35b558;
+  border-radius: 2px;
+  color: #35b558;
+  line-height: 30px;
+  text-align: center;
+  margin: 50px -40px 0 -77px; }
+  .registerNow:hover {
+    color: #fff;
+    background-color: #35b558; }
+
+.alllesson {
+  position: absolute;
+  left: 0; }
+
+.lesson {
+  width: 320px;
+  height: 70px;
+  margin-right: 5px;
+  margin-top: 5px;
+  float: left;
+  margin-left: 7px; }
+  .lesson:hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.buy {
+  width: 1000px;
+  height: 270px;
+  margin: 0 auto;
+  margin-top: 10px; }
+
+.price1 {
+  width: 242.5px;
+  height: 268px;
+  float: left; }
+  .price1:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.price2 {
+  margin-left: 10px;
+  width: 242.5px;
+  height: 268px;
+  float: left; }
+  .price2:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.price3 {
+  margin-left: 10px;
+  width: 242.5px;
+  height: 268px;
+  float: left; }
+  .price3:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.price4 {
+  margin-left: 10px;
+  width: 242.5px;
+  height: 268px;
+  float: left; }
+  .price4:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.section3 {
+  width: 1000px;
+  height: 310px;
+  margin: 0 auto; }
+
+.title1 {
+  font-size: 18px;
+  color: #555;
+  line-height: 18px;
+  height: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.ad {
+  width: 1000px;
+  height: 270px;
+  float: left; }
+
+.win {
+  width: 620px;
+  height: 135px;
+  float: left;
+  position: relative;
+  cursor: pointer; }
+  .win:hover .test {
+    opacity: 0.2; }
+
+.test {
+  width: 620px;
+  height: 135px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0;
+  transition: 1s; }
+
+.study {
+  width: 380px;
+  height: 135px;
+  float: left;
+  position: relative;
+  cursor: pointer; }
+  .study:hover .test2 {
+    opacity: 0.2; }
+
+.test2 {
+  width: 380px;
+  height: 135px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000;
+  opacity: 0;
+  transition: 1s; }
+
+.free {
+  width: 620px;
+  height: 135px;
+  float: left;
+  position: relative;
+  cursor: pointer; }
+  .free:hover .test3 {
+    opacity: 0.2; }
+
+.test3 {
+  width: 620px;
+  height: 135px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: 0;
+  transition: 1s; }
+
+.recommend {
+  width: 380px;
+  height: 135px;
+  float: left;
+  position: relative; }
+  .recommend:hover .test4 {
+    opacity: 0.2; }
+
+.test4 {
+  width: 380px;
+  height: 135px;
+  opacity: 0;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+  cursor: pointer; }
+
+.section4 {
+  width: 1000px;
+  height: 390px;
+  margin: 0 auto;
+  position: relative; }
+
+.collage {
+  font-size: 18px;
+  color: #555;
+  line-height: 18px;
+  height: 18px;
+  margin-top: 30px; }
+
+.html {
+  width: 555px;
+  height: 340px;
+  margin-top: 30px;
+  position: relative;
+  cursor: pointer; }
+  .html:hover .test5 {
+    opacity: 0.4; }
+
+.test5 {
+  width: 555px;
+  height: 340px;
+  opacity: 0;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 1s;
+  cursor: pointer; }
+
+.python {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  top: 12%;
+  right: 22%; }
+  .python:hover .test6 {
+    opacity: 0.4; }
+
+.test6 {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0;
+  background: #000; }
+
+.go {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  top: 12%;
+  right: 0%; }
+  .go:hover .test7 {
+    opacity: 0.4; }
+
+.test7 {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0;
+  background: #000; }
+
+.ios {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  bottom: 0%;
+  right: 22%; }
+  .ios:hover .test8 {
+    opacity: 0.4; }
+
+.test8 {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0;
+  background: #000; }
+
+.WX {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%; }
+  .WX:hover .test9 {
+    opacity: 0.4; }
+
+.test9 {
+  width: 210px;
+  height: 160px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0;
+  background: #000; }
+
+.VIPlesson {
+  width: 1000px;
+  height: 360px;
+  margin: 0 auto;
+  position: relative; }
+  .VIPlesson h2 {
+    font-size: 18px;
+    color: #555;
+    line-height: 18px;
+    height: 18px;
+    margin-top: 30px; }
+
+.VIPandroid {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPandroid:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPIOS {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPIOS:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPswift {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPswift:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPhtml {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPhtml:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPjs {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPjs:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPnode {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPnode:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 0 none; }
+
+.VIPC {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPC:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPjava {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPjava:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPPHP {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPPHP:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPJW {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPJW:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPpython {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPpython:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.VIPcocos {
+  width: 156px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  .VIPcocos:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+
+.vipimg {
+  width: 156px;
+  height: 150px; }
+
+.button {
+  width: 150px;
+  height: 40px;
+  border: 1px solid green;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.allviplesson {
+  width: 150px;
+  height: 40px;
+  background: white;
+  color: green; }
+
+.story {
+  width: 1000px;
+  height: 360px;
+  margin: 0 auto;
+  margin-top: 30px; }
+  .story h2 {
+    font-size: 18px;
+    color: #555;
+    line-height: 18px;
+    height: 18px;
+    margin-top: 30px; }
+
+.talk1 {
+  width: 300px;
+  height: 145px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 49px; }
+
+.talk2 {
+  width: 300px;
+  height: 145px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 49px; }
+
+.talk3 {
+  width: 300px;
+  height: 145px;
+  float: left;
+  margin-top: 10px; }
+
+.people1 {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-top: 40px; }
+
+.people2 {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 49px; }
+
+.people3 {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 49px; }
+
+.introduction1 {
+  width: 210px;
+  height: 80px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 10px; }
+
+.introduction2 {
+  width: 210px;
+  height: 80px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 10px; }
+
+.introduction3 {
+  width: 210px;
+  height: 80px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 10px; }
+
+.block1 {
+  width: 25px;
+  height: 10px;
+  background: green;
+  margin-top: 330px;
+  margin-left: 485px; }
+
+.block2 {
+  width: 10px;
+  height: 10px;
+  background: grey;
+  margin-left: 520px;
+  float: left;
+  margin-top: -10px; }
+
+.company {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto; }
+  .company h2 {
+    font-size: 18px;
+    color: #555;
+    line-height: 18px;
+    height: 18px;
+    margin-top: 30px; }
+
+.company1 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company2 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company3 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company4 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company5 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company6 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company7 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company8 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company9 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company10 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company11 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.company12 {
+  width: 156px;
+  height: 62px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+
+.more {
+  border: 1px solid green;
+  margin-top: 30px;
+  margin-left: 426px;
+  width: 150px;
+  height: 40px;
+  background: white;
+  color: green; }
+
+.main {
+  background: #f5f5f5;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 1000px; }
+
+footer {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto; }
+
+.bottom {
+  height: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  background: white;
+  min-width: 1000px;
+  min-height: 100px; }
+
+.bottom_jk_img {
+  width: 135px;
+  height: 50px;
+  margin-top: 30px; }
+
+.bottom_jk_word {
+  width: 200px;
+  height: 18px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 20px; }
+
+.bottom_jobcollage {
+  width: 150px;
+  height: 18px;
+  font-size: 10px;
+  color: #999;
+  margin-left: 200px;
+  margin-top: -80px; }
+  .bottom_jobcollage a {
+    width: 200px;
+    height: 18px;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    text-decoration: none; }
+
+.bottom_viplesson {
+  width: 150px;
+  height: 18px;
+  font-size: 10px;
+  color: #999;
+  margin-left: 400px;
+  margin-top: -18px; }
+  .bottom_viplesson a {
+    width: 200px;
+    height: 18px;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    text-decoration: none; }
+
+.bottom_community {
+  width: 150px;
+  height: 18px;
+  font-size: 10px;
+  color: #999;
+  margin-left: 550px;
+  margin-top: -18px; }
+  .bottom_community a {
+    width: 200px;
+    height: 18px;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    text-decoration: none; }
+
+.bottom_other {
+  width: 150px;
+  height: 18px;
+  font-size: 10px;
+  color: #999;
+  margin-left: 700px;
+  margin-top: -18px; }
+  .bottom_other a {
+    width: 200px;
+    height: 18px;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    text-decoration: none; }
+
+.bottom_tel {
+  width: 200px;
+  height: 18px;
+  font-size: 10px;
+  color: #999;
+  margin-left: 800px;
+  margin-top: -18px; }
+  .bottom_tel h2 {
+    width: 200px;
+    height: 18px;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    text-decoration: none; }
+
+.bottom_ios {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #ececec;
+  margin-left: 800px;
+  margin-top: 20px;
+  text-align: center; }
+  .bottom_ios span {
+    float: left;
+    margin-left: 50px;
+    margin-top: -30px;
+    font-size: 15px;
+    color: #999999; }
+
+.bottom_ios_img {
+  width: 40px;
+  height: 40px;
+  background: blue; }
+
+.bottom_android {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #ececec;
+  margin-left: 800px;
+  margin-top: 10px; }
+  .bottom_android span {
+    float: left;
+    margin-left: 50px;
+    margin-top: -30px;
+    font-size: 15px;
+    color: #999999; }
+
+.bottom_android_img {
+  width: 40px;
+  height: 40px;
+  background: blue; }
+
+hr {
+  margin-top: 50px;
+  opacity: 0.2; }
+
+.bottom_coryright {
+  width: 800px;
+  height: 5px;
+  font-size: 15px;
+  color: #999999;
+  margin: 10px 0 0px  300px; }
+
+.bottom_sina img {
+  width: 20px;
+  height: 15px;
+  margin-left: 900px;
+  float: left; }
+
+.bottom_wechet img {
+  width: 20px;
+  height: 15px;
+  margin-left: 930px;
+  float: left;
+  margin-top: -15px; }
+
+.bottom_believe img {
+  width: 60px;
+  height: 21.58px;
+  margin-left: 450px;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=main.css.map */

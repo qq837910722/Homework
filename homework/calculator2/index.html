@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css"></head>
+<body>
+	<div class="container">
+		<input type="numble" name="" id="nummessege">
+		<button id="backspace" onclick="backspace()">←</button>
+		<button value="Del" id="clear" onclick="onclickclear()">全清</button>
+		<button value="Del" id="clear" onclick="onclickclear()">清屏</button>
+		<button value="+/-" id="opposite" onclick="opposite('+/-')">+/-</button>
+		<button value="1/x" id="Reciprocal" onclick="Reciprocal('1/x')">1/x</button>
+		<button value="7" id="7" onclick="onclicknum(7)">7</button>
+		<button value="8" id="8" onclick="onclicknum(8)">8</button>
+		<button value="9" id="9" onclick="onclicknum(9)">9</button>
+		<button value="/" id="division" onclick="onclicknum('/')">÷</button>
+		<button value="%" id="percent" onclick="clicknum('%')">％</button>
+		<button value="4" id="4" onclick="onclicknum(4)">4</button>
+		<button value="5" id="5" onclick="onclicknum(5)">5</button>
+		<button value="6" id="6" onclick="onclicknum(6)">6</button>
+		<button value="*" id="mul" onclick="onclicknum('*')">×</button>
+		<button value="√￣" id="square" onclick="newclicknum('√￣')">√￣</button>
+		<button value="1" id="1" onclick="onclicknum(1)">1</button>
+		<button value="2" id="2" onclick="onclicknum(2)">2</button>
+		<button value="3" id="3" onclick="onclicknum(3)">3</button>
+		<button value="-" id="reduce" onclick="onclicknum('-')">-</button>
+		<button class="is" type="button" value="=" id="result" onclick="onclickresult()">=</button>
+		<button class="zero" value="0" id="zero" onclick="onclicknum(0)">0</button>
+		<button class="dot" value="." id="dot" onclick="onclicknum('.')">.</button>
+		<button class="add" value="+" id="add" onclick="onclicknum('+')">+</button>
+		<button class="cos" value="cos" id="cos" onclick="trigonometric('cos')">cos</button>
+		<button class="sin" value="sin" id="sin" onclick="trigonometric2('sin')">sin</button>
+	</div>
+</body>
+</html>
