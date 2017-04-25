@@ -1,4 +1,10 @@
 # Homework
+
+These my jike'homework.It just a small step to better font engineer. I will upload my better works.
+
+
+
+
 mission1   (1)baidu home page   (2)Curriculum schedule
 mission2   (1)Crossing         (2)qingdao’hometeacher register
 mission3   (1)3Drubik           (2)Brief strokes       (3)hack    (4)Double wings layout
